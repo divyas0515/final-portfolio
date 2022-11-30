@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color:lightgray;
+  background-size: 70% 100%;
+  background-image: url("images/website1.jpg");
+  min-height: 100%;
+}
+
+.menu {
+  display: none;
+}
+
+body {
+  margin:0;
+  padding:0;
+  background: whitesmoke;
+  font-family: Inconsolata;
+}
+.navbar ul{
+  list-style:none;
+  background: black;
+  padding: 0;
+  margin:0; 
+  text-align: center;
+}
+
+.navbar li{
+  display: inline-block; 
+}
+
+.navbar a{
+  text-decoration: none;
+  color:#fff;
+  width:100px;
+  display: block;
+  padding: 25px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background: grey;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<!--<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s2">
+      <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="about.html" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="resume.html" class="w3-button w3-block w3-black">RESUME</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="projects.html" class="w3-button w3-block w3-black">PROJECTS</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="contact.html" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>-->
+
+<div class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Hi, I'm Divya!</span></h5>
+    <p align="justify">I am a second year Computational Media student at the Georgia Institute of Technology.
+        I am excited to learn more about the field of CM and get to know more about the opportunities this
+        major has to offer. What I think is so fascinating about CM is that it combines the efficiency of computer science
+        with the beauty of art and design. I strongly believe that CM will be a huge industry with a variety of 
+        applications!</p>
+    <p align="justify">In addition to my studies at Georgia Tech, I am a member of Alpha Chi Omega, one of
+        the eight sororities located on campus. I hope to actively work alongside my peers to participate in 
+        activities that will further my education as well as take part in our philanthropy. AXO focuses
+        on domestic violence awareness, so I hope to become more involved with those efforts, and perhaps use my CM
+        education to build and provide resources that could be of use to DVA.</p>
+    <p align="justify">In this portfolio, I have included a few of the projects that I worked on this semester, and 
+      talked a little bit about each. These projects have been so fun to work on and have been great learning opportunities. 
+      Each of these projects helped me better understand how to work with HTML, CSS, and Javascript. This class has taught me 
+      important media and design principles that I hope to learn more about and apply to future projects! I would love to 
+      continue to add more projects to this portfolio and take part in exciting work! 
+    </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Design is where science and art break even."</i></p>
+      <p>Robin Matthews</p>
+    </div>
+    <img src="images/website2.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong> Tech Tower </p>
+    <p><strong> Georgia Tech </p>
+  </div>
+</div>
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
