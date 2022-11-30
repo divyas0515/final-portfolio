@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color:lightgray;
+  background-size: 70% 100%;
+  background-image: url("images/website1.jpg");
+  min-height: 100%;
+}
+
+.menu {
+  display: none;
+}
+
+body {
+  margin:0;
+  padding:0;
+  background: whitesmoke;
+  font-family: Inconsolata;
+}
+.navbar ul{
+  list-style:none;
+  background: black;
+  padding: 0;
+  margin:0; 
+  text-align: center;
+}
+
+.navbar li{
+  display: inline-block; 
+}
+
+.navbar a{
+  text-decoration: none;
+  color:#fff;
+  width:100px;
+  display: block;
+  padding: 25px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background: grey;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<!--<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s2">
+      <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="about.html" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="resume.html" class="w3-button w3-block w3-black">RESUME</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="projects.html" class="w3-button w3-block w3-black">PROJECTS</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="contact.html" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>-->
+
+<div class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Fall 2022 Projects</span></h5>
+      <p align="justify"> This semester, I had the opportunity to work on several different projects that helped me develop my
+        skills in javascript. I was able to work on a variety of team projects such as creating a 3D-model of a 2D
+        photo, writing a movie generator program, and even build a Twitterbot! Below, you will see a few of my projects
+        that I worked on these past few months.</p>
+      
+      <img src="images/aframe.png" width="700" height="500">
+      <p></p>
+      <iframe src="https://divyas0515.github.io/LMCproject/" width="700" height="500"></iframe>
+      <p align="justify">This first project is a 3D model we created using A-Frame. This platform allowed us to use a variety of HTML elements
+        and tags to create a 3D rendering of a 2D photo that students could pick. We worked in teams, and my group and I decided
+        to create this nightime scene of a moon with pink trees and a blue landscape to imitate a sea, based on a our reference picture of
+        the same landscape.
+      </p><br>
+
+      <iframe src="https://divyas0515.github.io/Assignment3/" width="700" height="500"></iframe>
+      <img src="images/assignment3.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+      <p align="justify">This second project is the movie managment system I programmed. Using a variety of javascript properties such as functions, 
+        conditionals, loops, booleans, and objects I was able to program this movie managment system that rates and adds different movies to a 
+        list of films, as well as indiacte whether a film was watched. Above is a link to the website, which you can right-click to inspect the 
+        site and view the console and source to see the output and javascript. I've also included a photo to show the console specifically. 
+      </p><br>
+
+      <!--<iframe src="https://twitter.com/divyash87292856" width="700" height="500"></iframe>-->
+      <img src="images/assignment 4.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+      <p align="justify">The next assignment we did this semester was the Twitterbot. My group and I created a Twitterbot that takes a tweet that includes 
+        a hashtag from a specific list we indicated in our program, and then retweets it on our own Twitter feed. The retweet capitalizes the 
+        caption of the tweet and includes the angry penguin meme. We formatted the retweet in such a way that it takes the caption and arranges
+        it as a conversation. We used a gotData() function to retrieve all the tweets that included hashtags we listed in our program. 
+        We then used a random number generator to randomly select from the pool of tweets to retweet onto our feed.
+      </p>
+    </div>
+  </div>
+
+  <!-- End page content -->
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+  
+  <script>
+  // Tabbed Menu
+  function openMenu(evt, menuName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+    }
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+  }
+  document.getElementById("myLink").click();
+  </script>
+  
+  </body>
+  </html>
